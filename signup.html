@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leendaen | Sign Up</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="logo">L</span>
+        <span class="brand-text">
+          <span class="name">leendaen</span>
+          <small class="tag">Payments & Payouts</small>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <main class="signup-container">
+    <div class="signup-card">
+      <h1>Create your account</h1>
+      <p class="subtitle">Join Leendaen and start managing payments easily.</p>
+
+      <form action="#" method="post" class="signup-form">
+        <div class="input-group">
+          <label>Full Name</label>
+          <input type="text" name="fullname" placeholder="Full Name" required>
+        </div>
+
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" name="password" placeholder="••••••••" required>
+        </div>
+
+        <div class="input-group">
+          <label>Confirm Password</label>
+          <input type="password" name="confirm_password" placeholder="••••••••" required>
+        </div>
+
+        <label class="terms">
+          <input type="checkbox" required>
+          <span>I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></span>
+        </label>
+
+        <button type="submit" class="btn btn-primary full">Sign Up</button>
+
+        <p class="login">Already have an account? <a href="login.html">Login</a></p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer">
+      <small class="muted">© <span id="year"></span> Leendaen — Secure. Simple. Smart.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
