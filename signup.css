@@ -1,0 +1,199 @@
+/* signup.css - Leendaen signup page */
+
+:root {
+  --bg: #f8fbff;
+  --text: #071129;
+  --muted: #64748b;
+  --accent: #2563eb;
+  --accent-2: #06b6d4;
+  --card: #ffffff;
+  --radius: 12px;
+  --shadow: 0 8px 30px rgba(9,30,66,0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: var(--text);
+  background: linear-gradient(180deg, var(--bg), #fff);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* header */
+.site-header {
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(9,30,66,0.04);
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  height: 72px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 700;
+}
+.logo {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  font-weight: 800;
+  box-shadow: var(--shadow);
+}
+.brand-text .name {
+  color: var(--text);
+  font-size: 15px;
+}
+.brand-text .tag {
+  color: var(--muted);
+  font-size: 11px;
+  display: block;
+}
+
+/* signup card */
+.signup-container {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: 40px 20px;
+}
+.signup-card {
+  width: 100%;
+  max-width: 460px;
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 34px;
+  border: 1px solid rgba(9,30,66,0.03);
+}
+.signup-card h1 {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+.subtitle {
+  color: var(--muted);
+  margin-bottom: 22px;
+}
+
+/* form */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+.input-group label {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.input-group input {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(9,30,66,0.1);
+  font-size: 15px;
+  transition: border-color 0.2s;
+}
+.input-group input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(37,99,235,0.1);
+}
+
+/* terms */
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.terms a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* button */
+.btn {
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-primary {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #fff;
+  padding: 12px 16px;
+  font-size: 15px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s;
+}
+.btn-primary:hover {
+  transform: translateY(-1px);
+}
+.full {
+  width: 100%;
+}
+.login {
+  text-align: center;
+  font-size: 14px;
+  color: var(--muted);
+  margin-top: 12px;
+}
+.login a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* footer */
+.site-footer {
+  border-top: 1px solid rgba(9,30,66,0.05);
+  text-align: center;
+  padding: 18px 0;
+  background: #fff;
+}
+.muted {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* responsive */
+@media (max-width: 600px) {
+  .signup-card {
+    padding: 26px;
+  }
+  .signup-card h1 {
+    font-size: 22px;
+  }
+}

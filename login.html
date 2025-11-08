@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leendaen | Login</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="logo">L</span>
+        <span class="brand-text">
+          <span class="name">leendaen</span>
+          <small class="tag">Payments & Payouts</small>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <main class="login-container">
+    <div class="login-card">
+      <h1>Welcome back</h1>
+      <p class="subtitle">Login to your Leendaen dashboard</p>
+
+      <form action="#" method="post" class="login-form">
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" name="password" placeholder="••••••••" required>
+        </div>
+
+        <div class="actions">
+          <label class="remember">
+            <input type="checkbox" name="remember">
+            <span>Remember me</span>
+          </label>
+          <a href="#" class="forgot">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary full">Login</button>
+
+        <p class="signup">Don’t have an account? <a href="signup.html">Sign up</a></p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer">
+      <small class="muted">© <span id="year"></span> Leendaen — Payments made simple.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
